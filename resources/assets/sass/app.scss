@@ -1,0 +1,155 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+.cbalink {
+  display: none;
+}
+
+body {
+  background-color: $main-bg;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 13px;
+  font-weight: 700;
+  margin-top: 13px;
+  margin-left: 5px;
+}
+
+.navbar-default {
+  background-color: $accent-color;
+  box-shadow: -1px 4px 7px -5px $black;
+  color: $white;
+  border: 0;
+
+  .nav.navbar-nav li a {
+    color: $white;
+  }
+
+  .navbar-brand {
+      padding: 3px 20px;
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+  }
+}
+
+#app-navbar-collapse {
+  li {
+    padding: 14px;
+  }
+  a {
+    padding: 0;
+    border-bottom: 1px solid $accent-color;
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  .dropdown-toggle-split {
+    padding: 0 5px;
+    border: 0;
+    box-shadow: none;
+    background-color: $accent-color;
+  }
+
+  .btn-group {
+    a {
+      padding-right: 5px;
+      color: $white;
+      border: 0;
+      box-shadow: none;
+    }
+
+    &.open {
+      a {
+        background-color: $accent-color;
+        border: 0;
+        box-shadow: none;
+        padding-right: 5px;
+      }
+
+      .dropdown-menu {
+        a {
+          background-color: $white;
+          color: $accent-color;
+        }
+      }
+    }
+
+    .btn:hover {
+      color: $white;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    overflow: hidden;
+    li {
+      padding: 0;
+      color: $black;
+      a {
+        border-bottom: none;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.navbar-default .nav.navbar-nav {
+  .dropdown-menu li a {
+    color: $black;
+  }
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: $accent-color-light;
+}
+
+.article {
+  .title {
+    font-size: 33px;
+    color: $accent-color;
+    padding-bottom: 10px;
+    line-height: 40px;
+    min-height: 90px;
+
+    a {
+      font-size: 33px;
+      color: $accent-color;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid $accent-color-light;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .created_date {
+    font-size: 13px;
+  }
+}
+
+h2 {
+  a {
+    font-size: 33px;
+    color: $accent-color;
+  }
+}
